@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />    
+    <link rel="stylesheet" href="globals.css" />    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>El Gato y La Caja | Ciencia + diseño</title>
+</head>
+<body>
+<header class="encabezado">
+    <a href="index.html" class="logo-titulo">
+        <img src="img/logo-negro.png" alt="logo" class="logo">
+        <h1>El Gato y La Caja</h1>
+    </a>
+
+    <nav class="navegacion-principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="libros.html">Libros</a></li>
+            <li><a href="notas.html">Notas</a></li>
+            <li><a href="podcast.html">Podcast</a></li>
+            <li><a href="experiencias.html">Experiencias</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+        </ul>
+    </nav>
+
+    <form class="buscador">
+        <input type="text" class="input-busqueda" placeholder="Buscar">
+        <button type="submit" class="boton-busqueda">
+            <img src="img/lupa-negra.png" alt="Buscar">
+        </button>
+    </form>
+</header>
+<main class="contenido">
+    <section class="portada">
+        
+        <div class="portada-contenido">
+
+    <div id="step-1" class="step-container">
+        <h1>Explora la ciencia <p>de la manera que quieras</p></h1>
+        <div class="opciones-portada">
+            <a href="#" class="boton-portada" data-target="#step-2-libros">Lee Nuestros Libros</a>
+            <a href="#" class="boton-portada" data-target="#step-2-podcast">Escucha Nuestro Podcast</a>
+            <a href="#" class="boton-portada" data-target="#step-2-experiencias">Sumergite en nuestras experiencias</a>
+        </div>
+    </div>
+
+    <div id="step-2-libros" class="step-container hidden">
+        <h2>¿Qué temática de libro <p> te interesa?</p></h2>
+        <div class="opciones-portada">
+            <a href="/libros/historia" class="boton-portada">Historia</a>
+            <a href="/libros/ciencia-y-naturaleza" class="boton-portada">Ciencia y Naturaleza</a>
+            <a href="/libros/ciencia-ficcion" class="boton-portada">Ciencia Ficción</a>
+        </div>
+        <button class="boton-atras" data-target="#step-1"><i class="fas fa-arrow-left"></i> Volver</button>
+    </div>
+
+    <div id="step-2-podcast" class="step-container hidden">
+        <h2>¿Qué te gustaría escuchar?</h2>
+        <div class="opciones-portada">
+            <a href="/podcast/entrevistas" class="boton-portada">Entrevistas</a>
+            <a href="/podcast/debates" class="boton-portada">Debates</a>
+            <a href="/podcast/narraciones" class="boton-portada">Narraciones</a>
+        </div>
+        <button class="boton-atras" data-target="#step-1"><i class="fas fa-arrow-left"></i> Volver</button>
+    </div>
+
+    <div id="step-2-experiencias" class="step-container hidden">
+        <h2>¿Qué tipo de experiencias <p> te interesan?</p></h2>
+        <div class="opciones-portada">
+            <a href="/experiencias/futuro-y-tecnologia" class="boton-portada">Futuro y Tecnologia</a>
+            <a href="/experiencias/alimentacion-y-salud" class="boton-portada">Alimentación y Salud</a>
+            <a href="/experiencias/mente-y-pensamiento-critico" class="boton-portada">Mente y Pensamiento Crítico</a>
+        </div>
+        <button class="boton-atras" data-target="#step-1"><i class="fas fa-arrow-left"></i> Volver</button>
+    </div>
+
+</div>
+        </section>
+    <section class="seccion-libros">
+        <h2 class="titulo-seccion">Nuestros libros</h2>
+        <p class="subtitulo-seccion">Explorá nuestra colección de libros fascinantes.</p>
+        <a href="libros.html" class="boton">Ver todos</a>
+
+         <div class="contenedor-libros">
+        <article class="libro-item">
+            <img src="img/libro-1.png" alt="Portada del libro El Reino">
+            <h3 class="libro-titulo">El Reino</h3>
+            <p class="libro-autor">Eugenia López</p>
+        </article>
+
+        <article class="libro-item">
+            <img src="img/libro-2.png" alt="Portada del libro La máquina ingobernable">
+            <h3 class="libro-titulo">La máquina ingobernable</h3>
+            <p class="libro-autor">Alejandro Galliano</p>
+        </article>
+
+        <article class="libro-item">
+            <img src="img/libro-3.png" alt="Portada del libro Espacio Negativo">
+            <h3 class="libro-titulo">Espacio Negativo</h3>
+            <p class="libro-autor">El Gato y La Caja</p>
+        </article>
+    </div>
+    </section>
+
+          <section class="seccion-articulos">
+        <div class="articulos-contenedor">
+            
+            <div class="articulos-info">
+                <h2 class="titulo-seccion">Artículos Recientes</h2>
+                <p class="subtitulo-seccion">Mantente al día con nuestras notas y artículos.</p>
+                <a href="notas.html" class="boton">Ver todos</a>
+            </div>
+
+            <div class="articulos-lista">
+                
+                <article class="articulo-card">
+                    <img src="img/articulos-1.jpg" alt="Ilustración de un cerebro con ideas" class="articulo-imagen">
+                    <div class="articulo-contenido">
+                        <h3 class="articulo-titulo">Un futuro vivo</h3>
+                        <p class="articulo-subtitulo">¿Por qué aspirar a una civilización biosolar y cómo empezamos a construirla? ¿Podemos ser protagonistas de una Transición Material?</p>
+                        <p class="articulo-descripcion">Parte I | Bosta en las ruedas</p>
+                        <div class="articulo-etiquetas">
+                            <span class="etiqueta">Futuro</span>
+                            <span class="etiqueta">Tecnologia</span>
+                        </div>
+                        <p class="articulo-autor">por Pablo A. González, Juama Garrido</p>
+                    </div>
+                </article>
+                
+                <article class="articulo-card">
+                    <img src="img/articulos-2.png" alt="Emoticones riendo sobre un fondo de ciencia" class="articulo-imagen">
+                    <div class="articulo-contenido">
+                        <h3 class="articulo-titulo">2040: Modelo para armar</h3>
+                        <p class="articulo-subtitulo">Carne sintética, mascotas de diseño, longevidad, riesgos existenciales... la biotecnología ya está moldeando nuestro...</p>
+                        <p class="articulo-descripcion">Cuatro futuros posibles marcados por la revolución biotecnológica.</p>
+                        <div class="articulo-etiquetas">
+                            <span class="etiqueta">Futuro</span>
+                            <span class="etiqueta">Ciencia</span>
+                        </div>
+                        <p class="articulo-autor">por El Gato y La Caja</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+      </section>
+
+      <section class="seccion-testimonios">
+        <h2 class="titulo-seccion">Lo que dicen nuestros oyentes</h2>
+        <p class="subtitulo-seccion">Comentarios recientes de nuestros seguidores.</p>
+        
+        <div class="testimonios-contenedor">
+            
+    <a href="https://www.instagram.com/p/DJeYyDktXjd/?img_index=1" target="_blank" rel="noopener noreferrer" class="testimonio-enlace">
+        <article class="testimonio-card">
+            <div class="testimonio-header">
+                <img src="img/perfil.png" alt="Foto de perfil de Martin" class="testimonio-avatar">
+                <div class="testimonio-usuario-info">
+                    <span class="testimonio-nombre">Martin</span>
+                    <span class="testimonio-meta">Hace 2 horas</span>
+                </div>
+            </div>
+            <img src="img/foto-opinion1.jpg" alt="Imagen del post de Martin sobre neurociencia" class="testimonio-imagen">
+            <div class="testimonio-cuerpo">
+                <p class="testimonio-comentario">Me llenaron de amor fúngico muchas gracias. ❤️</p>
+                <div class="articulo-etiquetas">
+                    <span class="etiqueta">Podcast</span>
+                    <span class="etiqueta">Neurociencia</span>
+                </div>
+            </div>
+        </article>
+    </a>
+
+    <a href="https://www.instagram.com/p/DKABcTtThJi/?img_index=1" target="_blank" rel="noopener noreferrer" class="testimonio-enlace">
+        <article class="testimonio-card">
+            <div class="testimonio-header">
+                <img src="img/perfil.png" alt="Foto de perfil de Sofia" class="testimonio-avatar">
+                <div class="testimonio-usuario-info">
+                    <span class="testimonio-nombre">Sofia</span>
+                    <span class="testimonio-meta">Ayer</span>
+                </div>
+            </div>
+            <img src="img/foto-opinion2.jpg" alt="Imagen del post de Sofia sobre un libro" class="testimonio-imagen">
+            <div class="testimonio-cuerpo">
+                <p class="testimonio-comentario">No podría describir todo lo que este libro me ayudó.</p>
+                <div class="articulo-etiquetas">
+                    <span class="etiqueta">Libros</span>
+                    <span class="etiqueta">Divulgación</span>
+                </div>
+            </div>
+        </article>
+    </a>
+
+    <a href="https://www.instagram.com/p/DLN28uJSHOD/?img_index=1" target="_blank" rel="noopener noreferrer" class="testimonio-enlace">
+        <article class="testimonio-card">
+            <div class="testimonio-header">
+                <img src="img/perfil.png" alt="Foto de perfil de Lucía" class="testimonio-avatar">
+                <div class="testimonio-usuario-info">
+                    <span class="testimonio-nombre">Lucía</span>
+                    <span class="testimonio-meta">Hace 1 día</span>
+                </div>
+            </div>
+            <img src="img/foto-opinion3.jpg" alt="Imagen del post de Lucía sobre un artículo de humor" class="testimonio-imagen">
+            <div class="testimonio-cuerpo">
+                <p class="testimonio-comentario">😂😂😂Fue mi conversación de hace un ratito. Genios. ❤️</p>
+                <div class="articulo-etiquetas">
+                    <span class="etiqueta">Artículos</span>
+                    <span class="etiqueta">Humor</span>
+                </div>
+            </div>
+        </article>
+    </a>
+    
+</div>
+      </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-contenedor">
+        
+        <div class="footer-columna">
+            <p>&copy; 2025 El Gato y La Caja</p>
+        </div>
+
+        <div class="footer-columna">
+            <h4>Síguenos en nuestras redes sociales</h4>
+            <div class="social-iconos">
+                <a href="https://www.instagram.com/elgatoylacaja" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/elgatoylacaja" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/elgatoylacaja" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://x.com/elgatoylacaja" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/company/elgatoylacaja/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/elgatoylacaja" target="_blank" rel="noopener noreferrer" aria-label="Github"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-columna">
+            <h4>Contáctanos</h4>
+            <a href="mailto:miau@elgatoylacaja.com" class="footer-contacto-link">miau@elgatoylacaja.com</a>
+        </div>
+
+    </div>
+</footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
