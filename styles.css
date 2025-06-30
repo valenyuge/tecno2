@@ -112,9 +112,33 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/fondo.jpg);
     background-size: cover;
     background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.portada::before {
+    content: ''; /* Requerido para que el pseudo-elemento se muestre */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1));    
+    z-index: 2;
+}
+
+.video-fondo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1; 
 }
 
 .portada-contenido {
@@ -125,6 +149,8 @@
     place-items: center;
     position: relative;
     min-height: 350px; 
+    position: relative;
+    z-index: 3;
 }
 
 .opciones-portada {
@@ -260,7 +286,6 @@
 /* ==================================================================== */
 
 .seccion-libros {
-    background-color: #1e1e1e;
     padding: 80px 20px; 
     display: flex;
     flex-direction: column; 
@@ -313,10 +338,6 @@
 /* ==================================================================== */
 /* --- 6. SECCIÓN: ARTÍCULOS --- */
 /* ==================================================================== */
-
-.seccion-articulos {
-    background-color: #121212;
-}
 
 .articulos-contenedor {
     display: flex;
@@ -417,13 +438,16 @@
     align-self: flex-end;
 }
 
+.fondo-unificado{
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)), url(img/fondo-libros.gif);
+    background-size: cover;
+}
+
 /* ==================================================================== */
 /* --- 7. SECCIÓN: TESTIMONIOS --- */
 /* ==================================================================== */
 
-.seccion-testimonios {
-    background-color: #1e1e1e;
-}
+
 
 .seccion-testimonios .titulo-seccion,
 .seccion-testimonios .subtitulo-seccion {
@@ -682,6 +706,74 @@
     background-color: #ffffff;
     color: #121212;
 }
+
+/* ==================================================================== */
+/* --- SECCION PODCAST --- */
+/* ==================================================================== */
+
+.seccion-podcast {
+    padding: 80px 20px;
+    text-align: center; /* Centra el H2, P y el botón "Ver todos" */
+}
+
+/* Contenedor principal de 2 columnas */
+.podcast-destacado-contenedor {
+    display: flex;
+    align-items: center; /* Alinea verticalmente la imagen y el texto */
+    gap: 60px; /* Espacio entre la imagen y el texto */
+    max-width: 1100px;
+    margin: 60px auto; /* Centra el bloque y le da espacio */
+    text-align: left; /* Resetea la alineación para el texto de la columna */
+}
+
+/* Columna de la imagen */
+.podcast-destacado-imagen {
+    flex: 1; /* Ocupa 1 parte del espacio */
+}
+
+.podcast-destacado-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* Columna de la información */
+.podcast-destacado-info {
+    flex: 1.2; /* Ocupa un poco más de espacio que la imagen */
+}
+
+.etiqueta-destacado {
+    display: inline-block;
+    background-color: #a0a0a0; /* Un color de acento, puedes cambiarlo */
+    color: #ffffff;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.podcast-destacado-titulo {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 15px 0;
+}
+
+.podcast-destacado-descripcion {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #a0a0a0;
+    margin: 0 0 30px 0;
+}
+
+/* Contenedor para el botón de Ver Todos, para darle espacio superior */
+.seccion-ver-todos {
+    margin-top: 40px;
+}
+
 
 /* ==================================================================== */
 /* --- 9. PAGINA EXPERIENCIAS --- */
